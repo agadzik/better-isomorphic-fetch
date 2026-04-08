@@ -1,0 +1,19 @@
+{
+  "name": "better-fetch-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "publish": "turbo run publish -F better-isomorphic-fetch"
+  },
+  "packageManager": "bun@1.3.6",
+  "devDependencies": {
+    "turbo": "^2.9.2"
+  }
+}
